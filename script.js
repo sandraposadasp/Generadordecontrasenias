@@ -60,3 +60,28 @@ function generarPassword() {
     
     evaluarSeguridad(password);
 }
+
+//evaluar seguridad
+
+function evaluarSeguridad(password) {
+    let nivel = 0;
+
+    // Reglas
+    if (password.length >= 8) nivel++;
+    if (/[A-Z]/.test(password)) nivel++;
+    if (/[a-z]/.test(password)) nivel++;
+    if (/[0-9]/.test(password)) nivel++;
+    if (/[^A-Za-z0-9]/.test(password)) nivel++;
+
+    // Clasificación
+    if (nivel <= 2) {
+        nivelTexto.textContent = "Débil";
+        nivelTexto.className = "debil";
+    } else if (nivel <= 4) {
+        nivelTexto.textContent = "Media";
+        nivelTexto.className = "media";
+    } else {
+        nivelTexto.textContent = "Fuerte";
+        nivelTexto.className = "fuerte";
+    }
+}
