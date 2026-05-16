@@ -85,3 +85,12 @@ function evaluarSeguridad(password) {
         nivelTexto.className = "fuerte";
     }
 }
+
+// Botón
+botonGenerar.addEventListener("click", generarPassword);
+
+// Copiar contraseña
+botonCopiar.addEventListener("click", () => {
+    navigator.clipboard.writeText(passwordInput.value);
+    alert("Contraseña copiada");
+});
