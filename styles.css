@@ -52,3 +52,20 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+.seguridad {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.debil {
+    color: red;
+}
+
+.media {
+    color: orange;
+}
+
+.fuerte {
+    color: lime;
+}
