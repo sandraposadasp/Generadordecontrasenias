@@ -10,3 +10,7 @@ const simbolos = document.getElementById("simbolos");
 
 const botonGenerar = document.getElementById("generar");
 const botonCopiar = document.getElementById("copiar");
+
+longitudInput.addEventListener("input", () => {
+    longitudValor.textContent = longitudInput.value;
+});
