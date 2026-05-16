@@ -15,3 +15,22 @@ body {
     border-radius: 10px;
     width: 300px;
 }
+
+.resultado {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.resultado input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.resultado button {
+    background: #22c55e;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
