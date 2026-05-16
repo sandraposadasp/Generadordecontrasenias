@@ -34,3 +34,12 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+
+.config {
+    margin-bottom: 15px;
+}
+
+.config label {
+    display: block;
+    margin: 5px 0;
+}
