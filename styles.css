@@ -43,3 +43,12 @@ body {
     display: block;
     margin: 5px 0;
 }
+
+#generar {
+    width: 100%;
+    padding: 10px;
+    background: #22c55e;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
